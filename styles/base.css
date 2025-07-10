@@ -6,9 +6,14 @@
 :root {
     --heading-background-color: #4682b4;
     --heading-text-color: white;
-    --heading-font: sans-serif;
     --padding: 1rem;
     --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.libertinus-mono-regular {
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #course-title {
@@ -18,6 +23,9 @@
     padding: 2rem;
     display: block;
     text-align: center;
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav {
@@ -35,6 +43,9 @@ nav a {
     padding: 0.5rem;
     font-size: 1.2rem;
     text-decoration: none;
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav a:hover {
@@ -47,6 +58,9 @@ main {
     padding: var(--padding);
     display: grid;
     grid-template-columns: auto 1fr auto/ auto 1fr auto;
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .card {
@@ -128,5 +142,8 @@ footer{
         padding: var(--padding);
         text-align: center;
         color: white;
+        font-family: "Libertinus Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
 }
 
