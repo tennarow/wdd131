@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #4682b4;
+    --secondary-color: darkolivegreen;
+    --font-family: "TikTok Sans", sans-serif;
+    --padding: 1rem
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-family);
+    padding: var(--padding);
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    max-width: 100px;
+    width: 90%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: rgb(162, 177, 135);
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+
+main h1 {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--padding);
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    text-align: center;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+#menu.open::before {
+    content: "❌";
+}

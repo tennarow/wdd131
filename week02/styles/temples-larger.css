@@ -1,0 +1,19 @@
+@media screen and (min-width:500px) {
+
+    #menu {
+        display: none;
+    }
+
+    main section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+    }
+}
