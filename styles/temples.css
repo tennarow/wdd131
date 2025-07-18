@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #4682b4;
+    --primary-color: #0b5896;
     --secondary-color: darkolivegreen;
     --font-family: "TikTok Sans", sans-serif;
     --padding: 1rem
@@ -12,7 +12,7 @@ header {
     padding: var(--padding);
     font-weight: 700;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 nav {
