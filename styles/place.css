@@ -1,0 +1,115 @@
+:root {
+    --heading-background-color: #4682b4;
+    --heading-text-color: white;
+    --accent-color: green;
+    --main-text-color: black;
+    --padding: 1rem;
+    --border: 1.5rem solid green;
+}
+
+header {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    border-bottom: var(--border);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero {
+    border-bottom: .5rem solid #4682b4;
+    width: 100%;
+}
+
+h1{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+dt{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    text-align: right;
+}
+
+dd{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer{
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
+    text-align: center;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+/* Default: Mobile layout */
+.hero-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 0;
+    background: white;
+    /* so it’s visible below the image */
+    z-index: 1;
+    position: relative;
+}
+
+.box {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.weather-heading {
+    text-align: center;
+}
+
+.weather-icon {
+    display: block;
+    margin: 0.5rem auto 0;
+    width: 40px;
+    height: 40px;
+}
+
+body,
+main {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+section h1 {
+    text-align: center;
+}

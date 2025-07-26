@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,19 @@
     <meta name="description" content="A page to portray the amazing country of Slovenia">
     <meta name="author" content="Tenna King">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/temples.js" defer> </script>
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Slovenia</h1>
@@ -16,60 +28,66 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-large.webp" media="min-width: 1000px">
-                <img src="images/hero-small.webp" alt="" width="400" height="200">
+                <source srcset="images/slovenia-mobile.webp" media="(max-width: 768px)">
+                <img src="images/slovenia-webpage.webp" alt="Responsive Image" class="hero-image">
             </picture>
+
+            <div class="hero-content">
+                <section class="box left">
+                    <h1>Data</h1>
+                    <dl>
+                        <dt>Area:</dt>
+                        <dd>20,273 km<sup>2</sup></dd>
+
+                        <dt>Population:</dt>
+                        <dd>2.1 million</dd>
+
+                        <dt>Capital:</dt>
+                        <dd>Ljubljana</dd>
+
+                        <dt>Language:</dt>
+                        <dd>Slovene</dd>
+
+                        <dt>Currency:</dt>
+                        <dd>Euro</dd>
+
+                        <dt>Time Zone:</dt>
+                        <dd>Central European Time</dd>
+
+                        <dt>Calling Code:</dt>
+                        <dd>+386</dd>
+
+                        <dt>Internet TLD:</dt>
+                        <dd>.si</dd>
+                    </dl>
+                </section>
+                <section class= "box right" id="weather">
+                    <div class="weather-heading">
+                        <h2>Weather</h2>
+                        <img src="images/weather.svg" alt="weather-icon" width="40" height="40">
+                    </div>
+                    <dl>
+                        <dt>Tempurature:</dt>
+                        <dd>10°C</dd>
+
+                        <dt>Conditions:</dt>
+                        <dd>cloudy</dd>
+
+                        <dt>Wind:</dt>
+                        <dd>6 km/h</dd>
+
+                        <dt>Wind Chill:</dt>
+                        <dd id="windchill"></dd>
+                    </dl>
+                </section>
+            </div>
         </div>
-        <section>
-            <h1>Data</h1>
-            <dl>
-                <dt>Area:</dt>
-                <dd>20,273 km<sup>2</sup></dd>
-
-                <dt>Population:</dt>
-                <dd>2.1 million</dd>
-
-                <dt>Capital:</dt>
-                <dd>Ljubljana</dd>
-
-                <dt>Language:</dt>
-                <dd>Slovene</dd>
-
-                <dt>Currency:</dt>
-                <dd>Euro</dd>
-
-                <dt>Time Zone:</dt>
-                <dd>Central European Time (CET, UTC+1)</dd>
-
-                <dt>Calling Code:</dt>
-                <dd>+386</dd>
-
-                <dt>Internet TLD:</dt>
-                <dd>.si</dd>
-            </dl>
-        </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <img src="" alt="" width="" height="">
-            <dl>
-                <dt>Tempurature:</dt>
-                <dd id="temp"></dd>
-                
-                <dt>Conditions:</dt>
-                <dd id="conditions"></dd>
-                
-                <dt>Wind:</dt>
-                <dd id="wind"></dd>
-                
-                <dt>Wind Chill:</dt>
-                <dd id="windChill"></dd>
-            </dl>
-        </section>
     </main>
     <footer>
         <p id="copyright"> 💫Tenna King💫 USA</p>
         <p id="lastModified"></p>
     </footer>
-    
+
 </body>
+
 </html>
