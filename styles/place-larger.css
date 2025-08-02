@@ -74,11 +74,11 @@
     #weather h2::after {
         content: "";
         display: inline-block;
-        background-image: url("images/weather.svg");
+        background-image: url("../images/weather.svg");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
+        width: 40px;
+        height: 40px;
         margin-left: 0.5rem;
         vertical-align: middle;
     }

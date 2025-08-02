@@ -1,5 +1,5 @@
 :root {
-    --heading-background-color: #4682b4;
+    --heading-background-color: #134285;
     --heading-text-color: white;
     --accent-color: green;
     --main-text-color: black;
@@ -17,7 +17,7 @@ header {
 }
 
 .hero {
-    border-bottom: .5rem solid #4682b4;
+    border-bottom: .5rem solid #134285;
     width: 100%;
 }
 
@@ -96,7 +96,7 @@ footer{
     text-align: center;
 }
 
-.weather-icon {
+.weather-icon-mobile {
     display: block;
     margin: 0.5rem auto 0;
     width: 40px;
