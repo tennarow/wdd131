@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Review Confirmation</title>
+</head>
+
+<body>
+    <main>
+        <h1>Thank you for your review!</h1>
+        <p id="reviewCount"></p>
+        <p><a href="form.html">Back to review form</a></p>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = localStorage.getItem("reviewsCompleted");
+            count = count ? parseInt(count, 10) : 0;
+            count++;
+            localStorage.setItem("reviewsCompleted", count);
+            document.getElementById("reviewCount").textContent = `Reviews completed: ${count}`;
+        });
+    </script>
+</body>
+
+</html>

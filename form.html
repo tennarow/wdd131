@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="A form for someone to submit a review - WDD131">
+    <meta name="author" content="Tenna King">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html" class="wf1">
+                <fieldset>
+                    <label>Product Name</label>
+                        <select id="productName" name="product" required>
+                            <option value="" disabled selected>Select a Product ...</option>
+                        </select>
+                    <div>Overall Rating</div>
+                    <label><input id="rating1" type="radio" name="rating" value="1" required>☆</label>
+                    <label><input id="rating2" type="radio" name="rating" value="2" required>☆☆</label>
+                    <label><input id="rating3" type="radio" name="rating" value="3" required>☆☆☆</label>
+                    <label><input id="rating4" type="radio" name="rating" value="4" required>☆☆☆☆</label>
+                    <label><input id="rating5" type="radio" name="rating" value="5" required>☆☆☆☆☆</label>
+
+                    <label for="dateofinstallation">Date of Installation</label>
+                    <input id="dateofinstallation" type="date" name="installDate" required>
+
+                    <div>Which features did you find useful in this product? Check all that apply</div>
+                    <label><input id="featureDurability" type="checkbox" name="durability" value="yes">Durability</label>
+                    <label><input id="featureEase" type="checkbox" name="use" value="yes">Ease of Use</label>
+                    <label><input id="featurePerformance" type="checkbox" name="performance" value="yes">Performance</label>
+                    <label><input id="featureDesign" type="checkbox" name="design" value="yes">Design</label>
+
+                    <label for="review">Written Review (Optional)</label>
+                    <textarea id="review" name="review"></textarea>
+                    <label>Your Name (Optional)<input id="name" type="text" name="fname"></label>
+                </fieldset>
+                <input type="submit" value="Post Review">
+            </form>
+    </main>
+    <footer>
+        <p id="copyright"> 💫Tenna King💫 USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
