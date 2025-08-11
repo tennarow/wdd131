@@ -1,9 +1,23 @@
+:root {
+    --heading-background-color: #EDD6CC;
+    --heading-text-color: #ab512f;
+    --accent-color: #9EAFB6;
+    --body-text: #233349;
+    --padding: 1rem;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+    --heading-font: "Cormorant Garamond", serif;
+    --heading-font-weight: 700;
+    --body-font: "Lora", serif;
+}
 
-    font-family: "Lora", serif;
+h1, h2 {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
+}
 
-    
-            font-family: "Cormorant Garamond", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-        }
+p, ul {
+    color: var(--body-text);
+    font-family: var(--body-font);
+}
