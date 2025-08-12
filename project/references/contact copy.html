@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact White Water Rafting CLub</title>
+    <meta name="description" content="Contact the Water Rafting Club Company">
+    <meta name="author" content="Tenna King">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/rafinglogo.png" alt="Company Logo" width="200">
+        <nav class="navigation">
+                <a href="index.html">Index</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Get in Touch</h1>
+        <p class="intro"> We are excited to hear from you and help you plan your experience with the White Water Rafting Club. It is an
+            unforgettable experience that you will not want to miss in the gorgeous canyons of Southern Utah.</p>
+        <section class="contact">
+                <h2>Contact Information</h2>
+                <div class="info">
+                    <p>Address: 2540 West Deer Creek Road, Marysvale, UT 84750</p>
+                    <p>Phone: 381-772-9000</p>
+                    <p>Email: raftingclub@whitewater.com</p>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4375.003537718607!2d-112.26355009980541!3d38.50337797534258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1729356352256!5m2!1sen!2sus"
+                        width="350" height="350" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                </div>
+        </section>
+        <h3>Our Employees</h3>
+        <div class="employees">
+            <figure>
+                <img src="images/josiecoleman.webp" alt="proud employee">
+                <figcaption> Josie Coleman</figcaption>
+            </figure>
+            <figure>
+                <img src="images/marcusnelson.webp" alt="proud employee">
+                <figcaption>Marcus Nelson</figcaption>
+            </figure>
+            <figure>
+                <img src="images/clarajones.webp" alt="proud employee">
+                <figcaption>Clara Jones</figcaption>
+            </figure>
+        </div>
+        <form class="send-message" id="contactus" action="/submit" method="post">
+            <fieldset>
+                <legend> Send us a message</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail">
+                <p>Please select one:</p>
+
+                <label>
+                    <input type="radio" name="option" value="general inquiry"> General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="option" value="reservation question"> Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="option" value="website suggestion"> Website Suggestion
+                </label>
+                <label for="textarea"> Feedback:</label>
+                <textarea id="textarea" name="feedback" rows="4" cols="8"
+                    placeholder="Any other message for us send here."></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    <label for="subscribe">Please subscribe me to the monthly newsletter </label>
+                </div>
+            </fieldset>
+            <button class="favorite" type="submit">Send message!</button>
+        </form>
+    </main>
+    <footer>
+        <p> &copy; 2024 *The White Water Rafting Club* Tenna King </p>
+        <nav class="wireframe-link">
+            <a href="https://app.moqups.com/5dff753BseKiQW42ThbTPExL4Wvj4Q4n/view/page/ad64222d5">Wireframe Contact Us
+            </a>
+        </nav>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com" target="blank">
+                <img src="images/facebooklogo.webp" alt="Facebook" width="30">
+            </a>
+            <a href="http://twitter.com" target="blank">
+                <img src="images/twitterlogo.webp" alt="Twitter" width="30">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="images/instagram-square-social-media-128.webp" alt="Instagram" width="30">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

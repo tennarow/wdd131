@@ -1,0 +1,128 @@
+:root {
+    --heading-background-color: #EDD6CC;
+    --heading-text-color: #ab512f;
+    --accent-color: #9EAFB6;
+    --body-text: #233349;
+    --padding: 1rem;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+    --heading-font: "Cormorant Garamond", serif;
+    --heading-font-weight: 700;
+    --body-font: "Lora", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /* keeps logo & nav aligned vertically */
+    background-color: var(--accent-color);
+    padding: 0 1rem;
+    height: 140px;
+    font-weight: 700;
+    /* make the whole bar taller */
+}
+
+header img {
+    height: 100%;
+    /* fill the header’s height */
+    object-fit: contain;
+}
+
+.navigation {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    background-color: var(--accent-color);
+}
+
+nav a {
+    color: var(--body-text);
+    text-decoration: none;
+    padding: 0 1.5rem;
+    /* only horizontal padding now */
+    font-size: 1.5rem;
+    /* bigger links to match taller bar */
+    display: flex;
+    align-items: center;
+    /* center link text vertically */
+    height: 100%;
+    /* stretch links full height of bar */
+}
+
+header nav a:hover {
+    background-color: var(--body-text);
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
+    text-align: center;
+    color: var(--body-text);
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+.coverpics {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row: 2;
+    padding: var(--padding);
+    gap: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.coverpics h1 {
+    display: inline-block;
+    text-align: center;
+    grid-column: 1 /-1;
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    background-color: var(--heading-background-color);
+    padding: 5px;
+}
+
+.coverpics img {
+    width: 300px;
+    grid-row: 2;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.whatwhenwhere {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.what {
+    grid-column: 1;
+}
+
+.when {
+    grid-column: 2;
+}
+
+.where {
+    grid-column: 3;
+}
+
+.what h1, .when h1, .where h1 {
+    color: var(--heading-text-color);
+    background-color: var(--accent-color);
+    padding: 5px;
+    text-align: center;
+}
+
+.whatwhenwhere p {
+    color: var(--body-text);
+    font-size: 1.25rem;
+    font-family: var(--body-font);
+    border: 1px solid #ab512f;
+    padding: 10px;
+}
