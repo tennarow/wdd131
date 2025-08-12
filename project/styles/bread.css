@@ -89,7 +89,7 @@ footer {
     grid-row: 2;
     display: block;
     margin: 0 auto;
-    
+
 }
 
 .whatwhenwhere {
@@ -112,7 +112,9 @@ footer {
     grid-column: 3;
 }
 
-.what h1, .when h1, .where h1 {
+.what h1,
+.when h1,
+.where h1 {
     color: var(--heading-text-color);
     background-color: var(--accent-color);
     padding: 5px;
@@ -125,4 +127,37 @@ footer {
     font-family: var(--body-font);
     border: 1px solid #ab512f;
     padding: 10px;
+}
+
+.about {
+    text-align: center;
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    background-color: var(--heading-background-color);
+    margin: 2rem auto;
+    padding: 5px;
+    max-width: 1200px;
+
+}
+
+.me-slovenia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.me-slovenia img {
+    justify-self: center;
+}
+
+.me-slovenia p {
+    color: var(--body-text);
+    font-family: var(--body-font);
+    border: 1px solid #ab512f;
+    padding: 20px;
+    font-size: 1.25rem;
+    justify-content: center;
 }
