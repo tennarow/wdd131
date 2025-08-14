@@ -149,6 +149,7 @@ footer {
     margin: 2rem auto;
     padding: 5px;
     max-width: 1200px;
+    font-size: 1.75rem;
 
 }
 
@@ -243,6 +244,7 @@ button:hover {
 .flavor-suggestions h2 {
     color: var(--heading-text-color);
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .flavor-suggestions form {
@@ -258,6 +260,8 @@ button:hover {
     border: 1px solid #ab512f;
     border-radius: 4px;
     width: 95%;
+    font-family: var(--body-font);
+
 }
 
 .flavor-suggestions button {
